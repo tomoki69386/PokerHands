@@ -1,8 +1,8 @@
 import Foundation
 
 public struct Trump {
-    let suit: Suit
-    let number: Number
+    public let suit: Suit
+    public let number: Number
 }
 
 extension Trump: Comparable {
@@ -16,5 +16,21 @@ extension Trump: CustomDebugStringConvertible {
 
     public var debugDescription: String {
         return "\(suit.string)\(number.string)"
+    }
+}
+
+extension Trump: CaseIterable {
+    public typealias AllCases = [Trump]
+    
+    public static var allCases: [Trump] {
+        let numbers = Number.allCases
+        let suits = Suit.allCases
+        var trumps = [Trump]()
+        for suit in suits {
+            for number in numbers {
+                trumps.append(Trump(suit: suit, number: number))
+            }
+        }
+        return trumps
     }
 }

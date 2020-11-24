@@ -6,7 +6,7 @@ public enum Suit {
     case diamonds
     case clubs
     
-    var string: String {
+    public var string: String {
         switch self {
         case .spades:
             return "♠"

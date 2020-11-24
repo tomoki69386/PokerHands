@@ -15,7 +15,7 @@ public enum Number {
     case thirteen
     case one
     
-    var string: String {
+    public var string: String {
         switch self {
         case .two: return "2"
         case .three: return "3"
