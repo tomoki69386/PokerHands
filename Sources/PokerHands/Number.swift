@@ -37,3 +37,5 @@ public enum Number {
 extension Number: Comparable { }
 
 extension Number: CaseIterable { }
+
+extension Number: Equatable { }

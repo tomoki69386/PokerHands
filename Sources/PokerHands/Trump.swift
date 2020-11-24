@@ -34,3 +34,5 @@ extension Trump: CaseIterable {
         return trumps
     }
 }
+
+extension Trump: Equatable { }

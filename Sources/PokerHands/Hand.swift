@@ -23,3 +23,5 @@ extension Hand {
         return firstTrump.number == secondTrump.number
     }
 }
+
+extension Hand: Equatable { }
