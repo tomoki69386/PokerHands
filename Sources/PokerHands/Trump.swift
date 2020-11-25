@@ -3,6 +3,11 @@ import Foundation
 public struct Trump {
     public let suit: Suit
     public let number: Number
+    
+    public init(suit: Suit, number: Number) {
+        self.suit = suit
+        self.number = number
+    }
 }
 
 extension Trump: Comparable {

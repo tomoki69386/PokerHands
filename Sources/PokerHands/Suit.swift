@@ -11,9 +11,9 @@ public enum Suit {
         case .spades:
             return "♠"
         case .hearts:
-            return "♡"
+            return "♥"
         case .diamonds:
-            return "♢"
+            return "♦"
         case .clubs:
             return "♣"
         }
