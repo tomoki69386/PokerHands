@@ -25,3 +25,5 @@ extension Suit: Comparable { }
 extension Suit: CaseIterable { }
 
 extension Suit: Equatable { }
+
+extension Suit: Hashable { }

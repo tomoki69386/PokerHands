@@ -25,3 +25,5 @@ extension Hand {
 }
 
 extension Hand: Equatable { }
+
+extension Hand: Hashable { }

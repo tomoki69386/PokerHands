@@ -39,3 +39,5 @@ extension Number: Comparable { }
 extension Number: CaseIterable { }
 
 extension Number: Equatable { }
+
+extension Number: Hashable { }

@@ -41,3 +41,5 @@ extension Trump: CaseIterable {
 }
 
 extension Trump: Equatable { }
+
+extension Trump: Hashable { }
